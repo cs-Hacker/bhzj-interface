@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: BhzjInterface
+  main:
+    allow-bean-definition-overriding: true
+logging:
+  level:
+    com.lucifer.springboot.cache.mapper: debug
