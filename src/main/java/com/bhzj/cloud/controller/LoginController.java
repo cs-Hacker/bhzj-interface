@@ -19,6 +19,7 @@ public class LoginController {
     public String loginCellphone(@RequestParam("phoneNumber") String phoneNumber,
                                  @RequestParam("password") String password,
                                  @RequestParam("code") String code){
+        System.out.println("LoginController-login_cellphone-->phoneNumber="+phoneNumber+"!password="+password+"!code="+code);
         return RestTemplateUtil.getResult(restTemplate, "/login/login_cellphone?phoneNumber="+phoneNumber+"&password="+password+"&code="+code);
     }
 
