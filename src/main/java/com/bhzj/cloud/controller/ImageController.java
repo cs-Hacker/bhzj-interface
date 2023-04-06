@@ -34,7 +34,12 @@ public class ImageController {
         String suffix = imageUrl.substring(imageUrl.lastIndexOf(".")+1);//后缀名
         response.setContentType("image/"+suffix);// image/png
         URL uri = new URL(path);
+
+
+        //加缓存
         BufferedImage img = ImageIO.read(uri);
+
+
         ImageIO.write(img, suffix, response.getOutputStream());
 //        response.setContentType("image/jpeg");//png
 //        String path = "http://182.43.106.149:8000/images/d8b2c7c0bff64ec0b2afe6455df1f977.jpeg";

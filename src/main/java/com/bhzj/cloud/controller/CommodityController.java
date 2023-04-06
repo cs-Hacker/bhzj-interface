@@ -93,7 +93,7 @@ public class CommodityController {
 
     @RequestMapping("/getCommodityListByIds")
     public String getCommodityListByIds(@RequestParam(name="commodityIds") String commodityIds){
-        return RestTemplateUtil.getResult(restTemplate, "/commodity/deleteCommodity?commodityIds="+commodityIds);
+        return RestTemplateUtil.getResult(restTemplate, "/commodity/getCommodityListByIds?commodityIds="+commodityIds);
     }
 
 }
