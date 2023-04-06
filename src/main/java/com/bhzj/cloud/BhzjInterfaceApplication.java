@@ -2,7 +2,9 @@ package com.bhzj.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
+@EnableCaching
 @SpringBootApplication  //代表这是一个Spring Boot的启动类
 public class BhzjInterfaceApplication {
 
