@@ -51,8 +51,9 @@ public class CommodityController {
         params.add("commodityTypeCode", commodityTypeCode);
         params.add("commodityType", commodityType);
         params.add("commodityPrice", commodityPrice);
-
-        params.add("file", file.getResource());
+        if(file!=null){
+            params.add("file", file.getResource());
+        }
         HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<MultiValueMap<String, Object>>(params, headers);
         String saveServiceUrl = ConstantConfig.serviceUri + "/commodity/addCommodity";//http://182.43.106.149:8000
         ResponseEntity<String> responseEntity = restTemplate.exchange(saveServiceUrl, HttpMethod.POST, requestEntity, String.class);
@@ -84,8 +85,9 @@ public class CommodityController {
         params.add("commodityType", commodityType);
         params.add("commodityPrice", commodityPrice);
         params.add("updateImg", updateImg);
-
-        params.add("file", file.getResource());
+        if(file!=null){
+            params.add("file", file.getResource());
+        }
         HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<MultiValueMap<String, Object>>(params, headers);
         String saveServiceUrl = ConstantConfig.serviceUri + "/commodity/updateCommodity";//http://182.43.106.149:8000
         ResponseEntity<String> responseEntity = restTemplate.exchange(saveServiceUrl, HttpMethod.POST, requestEntity, String.class);
