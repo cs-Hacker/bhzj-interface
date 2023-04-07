@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+
 @RestController
 @RequestMapping("/commodityOrder")
 public class CommodityOrderController {
@@ -17,7 +20,10 @@ public class CommodityOrderController {
     @RequestMapping("/publishCommodityOrder")
     public String publishCommodityOrder(@RequestParam("commodityId") String commodityId,
                                  @RequestParam("descMsg") String descMsg,
-                                 @RequestParam("priceTicket") double priceTicket){
+                                 @RequestParam("priceTicket") double priceTicket) throws UnsupportedEncodingException {
+        if(descMsg!=null && descMsg.length()>0){
+            descMsg = URLDecoder.decode(descMsg,"utf-8");
+        }
         return RestTemplateUtil.getResult(restTemplate, "/commodityOrder/publishCommodityOrder?commodityId="+commodityId+"&descMsg="+descMsg+"&priceTicket="+priceTicket);
     }
 

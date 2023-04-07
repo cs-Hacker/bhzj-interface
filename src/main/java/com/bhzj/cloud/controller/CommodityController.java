@@ -15,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.net.URLDecoder;
 
 @RestController //Controller声明
 @RequestMapping("/commodity")
@@ -75,6 +76,9 @@ public class CommodityController {
                                @RequestParam(name="commodityType", required=false) String commodityType,
                                @RequestParam(name="commodityPrice", required=false) String commodityPrice,
                                @RequestParam(name="updateImg", required=false) String updateImg) throws IOException {
+
+        commodityName = URLDecoder.decode(commodityName,"utf-8");
+        commodityType = URLDecoder.decode(commodityType,"utf-8");
 
         System.out.println("updateCommodity---->"
                 + "commodityId="+commodityId
