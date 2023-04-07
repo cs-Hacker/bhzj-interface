@@ -2,6 +2,7 @@ package com.bhzj.cloud.controller;
 
 import com.bhzj.cloud.ConstantConfig;
 import com.bhzj.cloud.common.utils.RestTemplateUtil;
+import com.bhzj.cloud.service.CommodityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.util.LinkedMultiValueMap;
@@ -21,11 +22,13 @@ public class CommodityController {
 
     @Autowired
     RestTemplate restTemplate;
+    @Autowired
+    CommodityService commodityService;
 
     //https://bhzj-interface-41211-8-1317629604.sh.run.tcloudbase.com/image/getImg?imageUrl=d8b2c7c0bff64ec0b2afe6455df1f977.jpeg
     @RequestMapping("/getAllCommodity")
     public String getAllCommodity(){
-        return RestTemplateUtil.getResult(restTemplate, "/commodity/getAllCommodity");
+        return commodityService.getAllCommodity();
     }
 
 

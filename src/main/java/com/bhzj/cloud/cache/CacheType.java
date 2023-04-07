@@ -27,7 +27,9 @@ public enum CacheType {
      */
 	
     //将过期时间设置为30s，方便我们测试
-    IMAGE_CACHE("图片缓存", "imageCache", 60, TimeUnit.SECONDS, 200, 1000);
+    IMAGE_CACHE("图片缓存", "imageCache", 60, TimeUnit.SECONDS, 200, 1000),
+
+    ALL_COMMODITY_CACHE("getAllCommodity", "allCommodity", 120, TimeUnit.SECONDS, 1, 1);
 
 
     /**

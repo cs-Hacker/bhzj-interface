@@ -1,6 +1,5 @@
 package com.bhzj.cloud.cache;
 
-import com.bhzj.cloud.cache.CacheType;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.caffeine.CaffeineCache;
