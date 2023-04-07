@@ -75,6 +75,16 @@ public class CommodityController {
                                @RequestParam(name="commodityType", required=false) String commodityType,
                                @RequestParam(name="commodityPrice", required=false) String commodityPrice,
                                @RequestParam(name="updateImg", required=false) String updateImg) throws IOException {
+
+        System.out.println("updateCommodity---->"
+                + "commodityId="+commodityId
+                + ",commodityName="+commodityName
+                + ",commodityType="+commodityType
+                + ",commodityPrice="+commodityPrice
+                + ",updateImg="+updateImg
+        );
+
+
         HttpHeaders headers = new HttpHeaders();
         //设置请求类型
         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
