@@ -42,6 +42,8 @@ public class CommodityController {
                                @RequestParam("commodityTypeCode") int commodityTypeCode,
                                @RequestParam("commodityType") String commodityType,
                                @RequestParam("commodityPrice") String commodityPrice) {
+        System.out.println("addCommodity-->" + commodityId + "---" + commodityName + "---" + commodityTypeCode + "---" + commodityType + "---" + commodityPrice);
+
         HttpHeaders headers = new HttpHeaders();
         //设置请求类型
         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
@@ -79,15 +81,6 @@ public class CommodityController {
 
         commodityName = URLDecoder.decode(commodityName,"utf-8");
         commodityType = URLDecoder.decode(commodityType,"utf-8");
-
-        System.out.println("updateCommodity---->"
-                + "commodityId="+commodityId
-                + ",commodityName="+commodityName
-                + ",commodityType="+commodityType
-                + ",commodityPrice="+commodityPrice
-                + ",updateImg="+updateImg
-        );
-
 
         HttpHeaders headers = new HttpHeaders();
         //设置请求类型
