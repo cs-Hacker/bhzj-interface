@@ -23,8 +23,10 @@ public class RegisterController {
     @RequestMapping("/register")
     public String register(@RequestParam("phoneNumber") String phoneNumber,
                                  @RequestParam("phoneMsg") String phoneMsg,
-                                 @RequestParam("password") String password){
-        return RestTemplateUtil.getResult(restTemplate, "/register/register?phoneNumber="+phoneNumber+"&phoneMsg="+phoneMsg+"&password="+password);
+                                 @RequestParam("password") String password,
+                                 @RequestParam("deliveryAddress") String deliveryAddress,
+                                @RequestParam("forget") int forget){
+        return RestTemplateUtil.getResult(restTemplate, "/register/register?phoneNumber="+phoneNumber+"&phoneMsg="+phoneMsg+"&password="+password+"&deliveryAddress="+deliveryAddress+"&forget="+forget);
     }
 
 
