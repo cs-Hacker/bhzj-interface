@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>addCommodityHtml</title>
+    <title>updateCommodityHtml</title>
 </head>
 <body>
-    <form  id="addCommodity" action="/commodity/addCommodityHtml" method="POST" enctype="multipart/form-data">
+
+    <form  id="addCommodity" action="/commodity/updateCommodityHtml" method="POST" enctype="multipart/form-data">
         <div class="inputItem">
             <text>产品id(如 pingguo_hfs)</text>
             <input  type="text" placeholder="请输入产品id" name="commodityId"/>
@@ -37,7 +38,10 @@
             <input type="file" name="file" />
         </div>
 
-        <input type="submit" value="上传商品" id="submitBnt">
+        <input type="submit" value="提交更改" id="submitBnt">
     </form>
+
+
+
 </body>
 </html>

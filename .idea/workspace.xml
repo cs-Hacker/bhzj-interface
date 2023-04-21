@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a8a568-bb36-4cdd-8ee5-ff459e4b60fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updateCommodity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/HtmlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/HtmlController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addCommodity.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addCommodity.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="207">
+              <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -29,10 +33,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+            <state relative-caret-position="174">
+              <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/updateCommodity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/HtmlController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addCommodity.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="71" lean-forward="true" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+            <state relative-caret-position="92">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -83,6 +112,7 @@
       <find>publishCommodityOrder</find>
       <find>BufferedImage</find>
       <find>login_cellphone</find>
+      <find>Controller声明</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,9 +152,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityOrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/test/Test.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/HtmlController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/ConstantConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/addCommodity.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/updateCommodity.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/HtmlController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
       </list>
@@ -156,8 +187,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="19" />
+    <option name="x" value="639" />
+    <option name="y" value="31" />
     <option name="width" value="1370" />
     <option name="height" value="984" />
   </component>
@@ -317,21 +348,21 @@
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25799572" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.25765306" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3449024" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.34470588" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.3286334" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4110629" />
+      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.37852496" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="right" id="Maven" order="1" visible="true" weight="0.17910448" />
+      <window_info anchor="right" id="Maven" order="1" weight="0.17857143" />
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
@@ -341,26 +372,38 @@
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.25829083" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.25765306" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.34588236" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.34470588" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.4110629" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.37852496" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="right" id="Maven" order="1" weight="0.17920919" />
+      <window_info anchor="right" id="Maven" order="1" weight="0.17857143" />
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Dockerfile">
@@ -619,18 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/HtmlController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -648,27 +679,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addCommodity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/updateCommodity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/HtmlController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+        <state relative-caret-position="174">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addCommodity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="71" lean-forward="true" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="207">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>

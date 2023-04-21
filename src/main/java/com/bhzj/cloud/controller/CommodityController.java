@@ -16,10 +16,8 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.net.URLDecoder;
-import java.util.HashMap;
-import java.util.Map;
 
-@RestController //Controller声明
+@RestController
 @RequestMapping("/commodity")
 public class CommodityController {
 
@@ -117,9 +115,24 @@ public class CommodityController {
         String saveServiceUrl = ConstantConfig.serviceUri + "/commodity/updateCommodity";//http://182.43.106.149:8000
         ResponseEntity<String> responseEntity = restTemplate.exchange(saveServiceUrl, HttpMethod.POST, requestEntity, String.class);
         return responseEntity.getBody();
-
-
     }
+
+
+
+    @RequestMapping("updateCommodityHtml")
+    public String updateCommodityHtml(HttpServletRequest request,
+                                  @RequestParam(name="file", required=false) MultipartFile file,
+                                  @RequestParam(name="commodityId") String commodityId,
+                                  @RequestParam(name="commodityName", required=false) String commodityName,
+                                  @RequestParam(name="commodityType", required=false) String commodityType,
+                                  @RequestParam(name="commodityPrice", required=false) String commodityPrice) throws IOException {
+//        System.out.println("file.isEmpty--->" + file.isEmpty());
+//        System.out.println("updateCommodityHtml-->" + commodityId + "---" + commodityName + "---" + commodityType + "---" + commodityPrice);
+        String updateImg = file.isEmpty() ? "0" : "1";
+        return this.updateCommodity(request, file, commodityId, commodityName, commodityType, commodityPrice, updateImg);
+//        return "sss";
+    }
+
 
     @RequestMapping("/getCommodityListByIds")
     public String getCommodityListByIds(@RequestParam(name="commodityIds") String commodityIds){
