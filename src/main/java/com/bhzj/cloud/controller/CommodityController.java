@@ -16,6 +16,8 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.net.URLDecoder;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController //Controller声明
 @RequestMapping("/commodity")
@@ -62,6 +64,22 @@ public class CommodityController {
         ResponseEntity<String> responseEntity = restTemplate.exchange(saveServiceUrl, HttpMethod.POST, requestEntity, String.class);
         return responseEntity.getBody();
     }
+
+
+
+
+    @RequestMapping("addCommodityHtml")
+    public String addCommodityHtml(@RequestParam("file") MultipartFile file,
+                               @RequestParam("commodityId") String commodityId,
+                               @RequestParam("commodityName") String commodityName,
+                               @RequestParam("commodityType") String commodityType,
+                               @RequestParam("commodityPrice") String commodityPrice) {
+        int commodityTypeCode = ConstantConfig.cTNameCTCodeMap.get(commodityType);
+        System.out.println("addCommodityHtml-->" + commodityId + "---" + commodityName + "---" + commodityTypeCode + "---" + commodityType + "---" + commodityPrice);
+        return this.addCommodity(file, commodityId, commodityName, commodityTypeCode, commodityType, commodityPrice);
+//        return "sss";
+    }
+
 
     @RequestMapping("deleteCommodity")
     public String deleteCommodity(

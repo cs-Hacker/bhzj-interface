@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form  id="addCommodity" action="/commodity/addCommodityHtml" method="POST" enctype="multipart/form-data">
+        <div class="inputItem">
+            <text>产品id(如 pingguo_hfs)</text>
+            <input  type="text" placeholder="请输入产品id" name="commodityId"/>
+        </div><br>
+
+        <div class="inputItem">
+            <text>产品名字</text>
+            <input type="text"  placeholder="请输入产品名字" name="commodityName"/>
+        </div><br>
+
+        <div class="inputItem">
+            <text>产品类型</text>
+            <select  name="commodityType" onchange="selectcity()">
+                <option>休闲零食</option>
+                <option>新鲜水果</option>
+                <option>时令蔬菜</option>
+                <option>肉蛋家禽</option>
+                <option>牛奶酸奶</option>
+            </select>
+        </div><br>
+
+        <div class="inputItem">
+            <text>产品价格</text>
+            <input type="text" name="commodityPrice"/>
+        </div><br>
+
+        <div>
+            <text>商品图片</text>
+            <input type="file" name="file" />
+        </div>
+
+        <input type="submit" value="上传商品" id="submitBnt">
+    </form>
+</body>
+</html>
