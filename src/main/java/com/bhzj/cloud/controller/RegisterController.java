@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.UnsupportedEncodingException;
+
 
 @RestController
 @RequestMapping("/register")
@@ -25,9 +27,14 @@ public class RegisterController {
                                  @RequestParam("phoneMsg") String phoneMsg,
                                  @RequestParam("password") String password,
                                  @RequestParam("deliveryAddress") String deliveryAddress,
-                                @RequestParam("forget") int forget){
+                                @RequestParam("forget") int forget) throws UnsupportedEncodingException {
         System.out.println("deliveryAddress--=>"+deliveryAddress);
-        return RestTemplateUtil.getResult(restTemplate, "/register/register?phoneNumber="+phoneNumber+"&phoneMsg="+phoneMsg+"&password="+password+"&deliveryAddress="+deliveryAddress+"&forget="+forget);
+        String deliveryAddressUtf8 = "";
+        if(deliveryAddress!=null){
+            deliveryAddressUtf8 = new String(deliveryAddress.getBytes("ISO-8859-1"), "UTF-8");
+            System.out.println("deliveryAddressUtf8--=>"+deliveryAddressUtf8);
+        }
+        return RestTemplateUtil.getResult(restTemplate, "/register/register?phoneNumber="+phoneNumber+"&phoneMsg="+phoneMsg+"&password="+password+"&deliveryAddress="+deliveryAddressUtf8+"&forget="+forget);
     }
 
 
