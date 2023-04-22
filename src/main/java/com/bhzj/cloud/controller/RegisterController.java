@@ -26,6 +26,7 @@ public class RegisterController {
                                  @RequestParam("password") String password,
                                  @RequestParam("deliveryAddress") String deliveryAddress,
                                 @RequestParam("forget") int forget){
+        System.out.println("deliveryAddress--=>"+deliveryAddress);
         return RestTemplateUtil.getResult(restTemplate, "/register/register?phoneNumber="+phoneNumber+"&phoneMsg="+phoneMsg+"&password="+password+"&deliveryAddress="+deliveryAddress+"&forget="+forget);
     }
 
