@@ -28,13 +28,8 @@ public class RegisterController {
                                  @RequestParam("password") String password,
                                  @RequestParam("deliveryAddress") String deliveryAddress,
                                 @RequestParam("forget") int forget) throws UnsupportedEncodingException {
-        System.out.println("deliveryAddress--=>"+deliveryAddress);
-        String deliveryAddressUtf8 = "";
-        if(deliveryAddress!=null){
-            deliveryAddressUtf8 = new String(deliveryAddress.getBytes("ISO-8859-1"), "UTF-8");
-            System.out.println("deliveryAddressUtf8--=>"+deliveryAddressUtf8);
-        }
-        return RestTemplateUtil.getResult(restTemplate, "/register/register?phoneNumber="+phoneNumber+"&phoneMsg="+phoneMsg+"&password="+password+"&deliveryAddress="+deliveryAddressUtf8+"&forget="+forget);
+        deliveryAddress = deliveryAddress!=null ? new String(deliveryAddress.getBytes("ISO-8859-1"), "UTF-8") : "";
+        return RestTemplateUtil.getResult(restTemplate, "/register/register?phoneNumber="+phoneNumber+"&phoneMsg="+phoneMsg+"&password="+password+"&deliveryAddress="+deliveryAddress+"&forget="+forget);
     }
 
 
