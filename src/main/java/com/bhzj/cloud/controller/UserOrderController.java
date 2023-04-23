@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.UnsupportedEncodingException;
+
 @RestController
 @RequestMapping("/userOrder")
 public class UserOrderController {
@@ -21,7 +23,8 @@ public class UserOrderController {
                                   @RequestParam("commodityIdNums") String commodityIdNums,
                                   @RequestParam("totalPrice") String totalPrice,
                                   @RequestParam("remark") String remark,
-                                  @RequestParam("deliveryAddress") String deliveryAddress){
+                                  @RequestParam("deliveryAddress") String deliveryAddress) throws UnsupportedEncodingException {
+        deliveryAddress = deliveryAddress!=null ? new String(deliveryAddress.getBytes("ISO-8859-1"), "UTF-8") : "";
         return RestTemplateUtil.getResult(restTemplate, "/userOrder/submitUserOrder?phoneNumber="+phoneNumber
                 +"&commodityOrderIds="+commodityOrderIds+"&commodityIdNums="+commodityIdNums+"&totalPrice="+totalPrice+"&remark="+remark+"&deliveryAddress="+deliveryAddress);
     }
