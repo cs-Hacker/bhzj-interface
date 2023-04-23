@@ -19,8 +19,10 @@ public class UserOrderController {
     public String submitUserOrder(@RequestParam("phoneNumber") String phoneNumber,
                                   @RequestParam("commodityOrderIds") String commodityOrderIds,
                                   @RequestParam("commodityIdNums") String commodityIdNums,
-                                  @RequestParam("totalPrice") String totalPrice){
-        return RestTemplateUtil.getResult(restTemplate, "/userOrder/submitUserOrder?phoneNumber="+phoneNumber+"&commodityOrderIds="+commodityOrderIds+"&commodityIdNums="+commodityIdNums+"&totalPrice="+totalPrice);
+                                  @RequestParam("totalPrice") String totalPrice,
+                                  @RequestParam("remark") String remark){
+        return RestTemplateUtil.getResult(restTemplate, "/userOrder/submitUserOrder?phoneNumber="+phoneNumber
+                +"&commodityOrderIds="+commodityOrderIds+"&commodityIdNums="+commodityIdNums+"&totalPrice="+totalPrice+"&remark="+remark);
     }
 
 
