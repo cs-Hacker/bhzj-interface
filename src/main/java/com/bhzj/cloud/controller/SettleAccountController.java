@@ -15,13 +15,14 @@ public class SettleAccountController {
     RestTemplate restTemplate;
 
 
-
     @RequestMapping("settleAccount")
     public String settleAccount(
                         @RequestParam("phoneNumber") String phoneNumber,
                          @RequestParam("userOrderIds") String userOrderIds,
-                         @RequestParam("settleAccountPayPrice") double settleAccountPayPrice){
-        return RestTemplateUtil.getResult(restTemplate, "/settleAccount/settleAccount?phoneNumber="+phoneNumber+"&userOrderIds="+userOrderIds+"&settleAccountPayPrice="+settleAccountPayPrice);
+                         @RequestParam("settleAccountPayPrice") double settleAccountPayPrice,
+                        @RequestParam("settleAccountCode") String settleAccountCode){
+        return RestTemplateUtil.getResult(restTemplate, "/settleAccount/settleAccount?phoneNumber="+phoneNumber+"&userOrderIds="
+                +userOrderIds+"&settleAccountPayPrice="+settleAccountPayPrice+"&settleAccountCode="+settleAccountCode);
     }
 
 
