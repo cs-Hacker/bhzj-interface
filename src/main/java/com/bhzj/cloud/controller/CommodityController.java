@@ -41,7 +41,9 @@ public class CommodityController {
                                @RequestParam("commodityName") String commodityName,
                                @RequestParam("commodityTypeCode") int commodityTypeCode,
                                @RequestParam("commodityType") String commodityType,
-                               @RequestParam("commodityPrice") String commodityPrice) {
+                               @RequestParam("commodityPrice") String commodityPrice,
+                               @RequestParam(name="huodongIndex", required=false) Integer huodongIndex,
+                               @RequestParam(name="popularizeMsg", required=false) String popularizeMsg) {
         System.out.println("addCommodity-->" + commodityId + "---" + commodityName + "---" + commodityTypeCode + "---" + commodityType + "---" + commodityPrice);
 
         HttpHeaders headers = new HttpHeaders();
@@ -54,6 +56,8 @@ public class CommodityController {
         params.add("commodityTypeCode", commodityTypeCode);
         params.add("commodityType", commodityType);
         params.add("commodityPrice", commodityPrice);
+        params.add("huodongIndex", huodongIndex);
+        params.add("popularizeMsg", popularizeMsg);
         if(file!=null){
             params.add("file", file.getResource());
         }
@@ -71,10 +75,12 @@ public class CommodityController {
                                @RequestParam("commodityId") String commodityId,
                                @RequestParam("commodityName") String commodityName,
                                @RequestParam("commodityType") String commodityType,
-                               @RequestParam("commodityPrice") String commodityPrice) {
+                               @RequestParam("commodityPrice") String commodityPrice,
+                               @RequestParam(name="huodongIndex", required=false) Integer huodongIndex,
+                               @RequestParam(name="popularizeMsg", required=false) String popularizeMsg) {
         int commodityTypeCode = ConstantConfig.cTNameCTCodeMap.get(commodityType);
-        System.out.println("addCommodityHtml-->" + commodityId + "---" + commodityName + "---" + commodityTypeCode + "---" + commodityType + "---" + commodityPrice);
-        return this.addCommodity(file, commodityId, commodityName, commodityTypeCode, commodityType, commodityPrice);
+
+        return this.addCommodity(file, commodityId, commodityName, commodityTypeCode, commodityType, commodityPrice, huodongIndex, popularizeMsg);
 //        return "sss";
     }
 
@@ -93,10 +99,13 @@ public class CommodityController {
                                @RequestParam(name="commodityName", required=false) String commodityName,
                                @RequestParam(name="commodityType", required=false) String commodityType,
                                @RequestParam(name="commodityPrice", required=false) String commodityPrice,
-                               @RequestParam(name="updateImg", required=false) String updateImg) throws IOException {
+                               @RequestParam(name="updateImg", required=false) String updateImg,
+                               @RequestParam(name="huodongIndex", required=false) Integer huodongIndex,
+                               @RequestParam(name="popularizeMsg", required=false) String popularizeMsg   ) throws IOException {
 
         commodityName = URLDecoder.decode(commodityName,"utf-8");
         commodityType = URLDecoder.decode(commodityType,"utf-8");
+        popularizeMsg = URLDecoder.decode(popularizeMsg,"utf-8");
 
         HttpHeaders headers = new HttpHeaders();
         //设置请求类型
@@ -108,6 +117,8 @@ public class CommodityController {
         params.add("commodityType", commodityType);
         params.add("commodityPrice", commodityPrice);
         params.add("updateImg", updateImg);
+        params.add("huodongIndex", huodongIndex);
+        params.add("popularizeMsg", popularizeMsg);
         if(file!=null){
             params.add("file", file.getResource());
         }
@@ -122,14 +133,15 @@ public class CommodityController {
     @RequestMapping("updateCommodityHtml")
     public String updateCommodityHtml(HttpServletRequest request,
                                   @RequestParam(name="file", required=false) MultipartFile file,
-                                  @RequestParam(name="commodityId") String commodityId,
-                                  @RequestParam(name="commodityName", required=false) String commodityName,
-                                  @RequestParam(name="commodityType", required=false) String commodityType,
-                                  @RequestParam(name="commodityPrice", required=false) String commodityPrice) throws IOException {
+                                  @RequestParam(name="commodityId") String commodityId
+//                                  @RequestParam(name="commodityName", required=false) String commodityName,
+//                                  @RequestParam(name="commodityType", required=false) String commodityType,
+//                                  @RequestParam(name="commodityPrice", required=false) String commodityPrice
+        ) throws IOException {
 //        System.out.println("file.isEmpty--->" + file.isEmpty());
 //        System.out.println("updateCommodityHtml-->" + commodityId + "---" + commodityName + "---" + commodityType + "---" + commodityPrice);
         String updateImg = file.isEmpty() ? "0" : "1";
-        return this.updateCommodity(request, file, commodityId, commodityName, commodityType, commodityPrice, updateImg);
+        return this.updateCommodity(request, file, commodityId, null, null, null, updateImg, null, null);
 //        return "sss";
     }
 
