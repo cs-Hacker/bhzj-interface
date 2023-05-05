@@ -13,6 +13,8 @@ public class ConstantConfig {
 
     public static Map<String, Integer> cTNameCTCodeMap = new HashMap();
     static {
+        cTNameCTCodeMap.put("免费领取", -1);
+
         cTNameCTCodeMap.put("时令蔬菜", 1);
         cTNameCTCodeMap.put("新鲜水果", 2);
         cTNameCTCodeMap.put("肉蛋家禽", 3);
