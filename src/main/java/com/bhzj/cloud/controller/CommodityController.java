@@ -43,7 +43,8 @@ public class CommodityController {
                                @RequestParam("commodityType") String commodityType,
                                @RequestParam("commodityPrice") String commodityPrice,
                                @RequestParam(name="huodongIndex", required=false) Integer huodongIndex,
-                               @RequestParam(name="popularizeMsg", required=false) String popularizeMsg) {
+                               @RequestParam(name="popularizeMsg", required=false) String popularizeMsg,
+                               @RequestParam(name="newUserCanGet", required=false) String newUserCanGet) {
         System.out.println("addCommodity-->" + commodityId + "---" + commodityName + "---" + commodityTypeCode + "---" + commodityType + "---" + commodityPrice);
 
         HttpHeaders headers = new HttpHeaders();
@@ -58,6 +59,7 @@ public class CommodityController {
         params.add("commodityPrice", commodityPrice);
         params.add("huodongIndex", huodongIndex);
         params.add("popularizeMsg", popularizeMsg);
+        params.add("newUserCanGet", newUserCanGet);
         if(file!=null){
             params.add("file", file.getResource());
         }
@@ -77,10 +79,11 @@ public class CommodityController {
                                @RequestParam("commodityType") String commodityType,
                                @RequestParam("commodityPrice") String commodityPrice,
                                @RequestParam(name="huodongIndex", required=false) Integer huodongIndex,
-                               @RequestParam(name="popularizeMsg", required=false) String popularizeMsg) {
+                               @RequestParam(name="popularizeMsg", required=false) String popularizeMsg,
+                               @RequestParam(name="newUserCanGet", required=false) String newUserCanGet) {
         int commodityTypeCode = ConstantConfig.cTNameCTCodeMap.get(commodityType);
 
-        return this.addCommodity(file, commodityId, commodityName, commodityTypeCode, commodityType, commodityPrice, huodongIndex, popularizeMsg);
+        return this.addCommodity(file, commodityId, commodityName, commodityTypeCode, commodityType, commodityPrice, huodongIndex, popularizeMsg, newUserCanGet);
 //        return "sss";
     }
 
