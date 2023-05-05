@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a8a568-bb36-4cdd-8ee5-ff459e4b60fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addCommodity.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addCommodity.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addCommodity.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+            <state relative-caret-position="161">
+              <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -53,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="106">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1160#1161#0" expanded="true" />
@@ -237,9 +236,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="237" />
-    <option name="y" value="9" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="305" />
     <option name="width" value="1682" />
     <option name="height" value="984" />
   </component>
@@ -402,7 +400,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="305" y="0" width="1682" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
@@ -410,7 +408,7 @@
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="3" weight="0.26865673" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2548807" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2764706" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -774,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="106">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1160#1161#0" expanded="true" />
@@ -786,8 +784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addCommodity.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+        <state relative-caret-position="161">
+          <caret line="49" column="60" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
         </state>
       </provider>
     </entry>
