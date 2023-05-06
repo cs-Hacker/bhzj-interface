@@ -24,5 +24,10 @@ public class LoginController {
     }
 
 
+    @RequestMapping("/userInfoOthers")
+    public String userInfoOthers(@RequestParam("phoneNumber") String phoneNumber){
+        return RestTemplateUtil.getResult(restTemplate, "/login/userInfoOthers?phoneNumber="+phoneNumber);
+    }
+
 
 }
