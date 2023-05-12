@@ -25,4 +25,17 @@ public class UserInfoController {
     }
 
 
+    @RequestMapping("/cipherIdSubmit")
+    public String cipherIdSubmit(@RequestParam("phoneNumber") String phoneNumber,
+                                 @RequestParam("cipherId") String cipherId){
+        return RestTemplateUtil.getResult(restTemplate, "/userInfo/cipherIdSubmit?phoneNumber="+phoneNumber+"&cipherId="+cipherId);
+    }
+
+    @RequestMapping("/initCipher")
+    public String initCipher(@RequestParam("quanYiCode") String quanYiCode,
+                             @RequestParam("cipherNumber") int cipherNumber){
+        return RestTemplateUtil.getResult(restTemplate, "/userInfo/initCipher?quanYiCode="+quanYiCode+"&cipherNumber="+cipherNumber);
+    }
+
+
 }
