@@ -45,6 +45,12 @@ public class CommodityOrderController {
     }
 
 
+    @RequestMapping("/getNoPhoneCOCommodityIdNum")
+    public String getNoPhoneCOCommodityIdNum(){
+        return RestTemplateUtil.getResult(restTemplate, "/commodityOrder/getNoPhoneCOCommodityIdNum");
+    }
+
+
     @RequestMapping("/addToTrolley")
     public String addToTrolley(@RequestParam("commodityOrderId") String commodityOrderId,
                                @RequestParam("phoneNumber") String phoneNumber){
