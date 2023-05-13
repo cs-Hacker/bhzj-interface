@@ -20,16 +20,23 @@ public class CommodityOrderController {
     @RequestMapping("/publishCommodityOrder")
     public String publishCommodityOrder(@RequestParam("commodityId") String commodityId,
                                  @RequestParam("descMsg") String descMsg,
-                                 @RequestParam("priceTicket") double priceTicket) throws UnsupportedEncodingException {
+                                 @RequestParam("priceTicket") double priceTicket,
+                                        @RequestParam("number") int number) throws UnsupportedEncodingException {
         if(descMsg!=null && descMsg.length()>0){
             descMsg = URLDecoder.decode(descMsg,"utf-8");
         }
-        return RestTemplateUtil.getResult(restTemplate, "/commodityOrder/publishCommodityOrder?commodityId="+commodityId+"&descMsg="+descMsg+"&priceTicket="+priceTicket);
+        return RestTemplateUtil.getResult(restTemplate, "/commodityOrder/publishCommodityOrder?commodityId="+commodityId
+                +"&descMsg="+descMsg+"&priceTicket="+priceTicket+"&number="+number);
     }
 
     @RequestMapping("/deleteCommodityOrder")
     public String deleteCommodityOrder(@RequestParam("commodityOrderId") String commodityOrderId){
         return RestTemplateUtil.getResult(restTemplate, "/commodityOrder/deleteCommodityOrder?commodityOrderId="+commodityOrderId);
+    }
+
+    @RequestMapping("/deleteCommodityOrders")
+    public String deleteCommodityOrders(@RequestParam("commodityOrderIds") String commodityOrderIds){
+        return RestTemplateUtil.getResult(restTemplate, "/commodityOrder/deleteCommodityOrders?commodityOrderIds="+commodityOrderIds);
     }
 
     @RequestMapping("/getCOListByCIdNoPhone")

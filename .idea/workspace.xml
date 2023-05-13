@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71a8a568-bb36-4cdd-8ee5-ff459e4b60fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityOrderController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,38 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="633">
+              <caret line="38" column="98" selection-start-line="38" selection-start-column="98" selection-end-line="38" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1160#1161#0" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/service/CommodityService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-              <folding>
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/UserInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="36" column="116" selection-start-line="36" selection-start-column="104" selection-end-line="36" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -74,7 +50,6 @@
       <find>cacheManager</find>
       <find>utf</find>
       <find>descMsg</find>
-      <find>publishCommodityOrder</find>
       <find>BufferedImage</find>
       <find>Controller声明</find>
       <find>searchCommodity</find>
@@ -96,6 +71,7 @@
       <find>updateCommodity</find>
       <find>时令蔬菜</find>
       <find>RestTemplate</find>
+      <find>publishCommodityOrder</find>
     </findStrings>
     <replaceStrings>
       <replace>目录</replace>
@@ -133,7 +109,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/cache/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/service/CommodityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/cache/CacheType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityOrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/HtmlController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/RegisterController.java" />
@@ -150,6 +125,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/cfgbeans/ConfigBean.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/addCommodity.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityOrderController.java" />
       </list>
     </option>
   </component>
@@ -179,8 +155,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="289" />
-    <option name="y" value="100" />
+    <option name="x" value="544" />
+    <option name="y" value="46" />
     <option name="width" value="1682" />
     <option name="height" value="984" />
   </component>
@@ -319,7 +295,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="289" y="100" width="1682" height="984" extended-state="0" />
+    <frame x="544" y="46" width="1682" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
@@ -349,9 +325,9 @@
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.27373612" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.27373612" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.27529413" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.27529413" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -526,16 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="123" selection-start-line="26" selection-start-column="123" selection-end-line="26" selection-end-column="123" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -699,8 +665,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="36" column="116" selection-start-line="36" selection-start-column="104" selection-end-line="36" selection-end-column="116" />
+        <state relative-caret-position="119">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bhzj/cloud/controller/CommodityOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="38" column="98" selection-start-line="38" selection-start-column="98" selection-end-line="38" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
