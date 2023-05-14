@@ -154,4 +154,14 @@ public class CommodityController {
         return RestTemplateUtil.getResult(restTemplate, "/commodity/getCommodityListByIds?commodityIds="+commodityIds);
     }
 
+    @RequestMapping("/getHuoDongCommodityIndexAll")
+    public String getHuoDongCommodityIndexAll(){
+        return RestTemplateUtil.getResult(restTemplate, "/commodity/getHuoDongCommodityIndexAll");
+    }
+
+    @RequestMapping("/SubmitHuoDongCommodityIndexAll")
+    public String SubmitHuoDongCommodityIndexAll(@RequestParam(name="commodityIdHuoDongIndexs") String commodityIdHuoDongIndexs){
+        return RestTemplateUtil.getResult(restTemplate, "/commodity/SubmitHuoDongCommodityIndexAll?commodityIdHuoDongIndexs=" + commodityIdHuoDongIndexs);
+    }
+
 }
